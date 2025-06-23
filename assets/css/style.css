@@ -9,8 +9,62 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* === 720° Feedback Section Card ================================= */
-/* === SMART Goal Section ======================================= */
+.reflection{
+  background:linear-gradient(135deg,#0d1b2a 0%,#1b263b 50%,#1e2744 100%);
+  color:#e9ecef;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+
+.reflection-card{
+  background:rgba(255,255,255,.05);
+  border-left:6px solid #2e8df7;     /* aksen biru muda */
+  border-radius:12px;
+  backdrop-filter:blur(6px);
+  font-size:15px;
+  line-height:1.8;
+}
+
+.reflection .section-title h2,
+.reflection .section-title p{
+  color:#fff;
+}
+
+@media (prefers-color-scheme: light){
+  .reflection{
+    background:#f4f9ff;
+    color:#333;
+  }
+  .reflection-card{
+    background:#ffffff;
+    border-left-color:#0d6efd;
+  }
+}
+
+.interview{
+  background:#fafbfe;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+
+.interview-img{
+  border-radius:12px;
+  box-shadow:0 4px 16px rgba(0,0,0,.1);
+}
+
+.interview-card{
+  background:#ffffff;
+  border-left:6px solid #ffc107;            /* aksen kuning */
+  border-radius:12px;
+  font-size:15px;
+  line-height:1.8;
+}
+
+@media (prefers-color-scheme: dark){
+  .interview{background:#111;}
+  .interview-card{background:#1e1e1e;color:#ddd;border-left-color:#ffcd39;}
+}
+
 .smart-goal{
   background:linear-gradient(135deg,#f8f9fa 0%,#ffffff 40%,#f0f6ff 100%);
   padding-top:60px;
