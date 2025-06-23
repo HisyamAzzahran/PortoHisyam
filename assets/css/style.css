@@ -9,6 +9,84 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* === 720° Feedback Section Card ================================= */
+/* === SMART Goal Section ======================================= */
+.smart-goal{
+  background:linear-gradient(135deg,#f8f9fa 0%,#ffffff 40%,#f0f6ff 100%);
+  padding-top:60px;
+  padding-bottom:60px;
+}
+
+.smart-btn{
+  font-weight:600;
+  font-size:18px;
+  letter-spacing:.5px;
+}
+
+.smart-letter{
+  width:34px;
+  height:34px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:700;
+  border-radius:50%;
+  margin-right:10px;
+}
+
+/* Warna setiap huruf */
+.smart-btn.specific     .smart-letter{background:#ff6f61;}
+.smart-btn.measurable   .smart-letter{background:#ffb400;}
+.smart-btn.actionable   .smart-letter{background:#5abd8c;}
+.smart-btn.realistic    .smart-letter{background:#007bff;}
+.smart-btn.timebound    .smart-letter{background:#6746ff;}
+
+/* List Styling */
+.smart-list{
+  margin:0;
+  padding-left:18px;
+}
+.smart-list li{
+  margin-bottom:6px;
+}
+
+/* Accordion item card look */
+.accordion-item{
+  border:none;
+  margin-bottom:12px;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+.accordion-button{
+  padding:16px 20px;
+}
+.accordion-button:not(.collapsed){
+  color:#fff;
+}
+.accordion-button.specific:not(.collapsed){background:#ff6f61;}
+.accordion-button.measurable:not(.collapsed){background:#ffb400;}
+.accordion-button.actionable:not(.collapsed){background:#5abd8c;}
+.accordion-button.realistic:not(.collapsed){background:#007bff;}
+.accordion-button.timebound:not(.collapsed){background:#6746ff;}
+
+.feedback-card{
+  background:#ffffff;
+  border-left:6px solid #0d6efd;      /* aksen biru brand */
+  border-radius:12px;
+  font-size:15px;
+  line-height:1.7;
+}
+
+@media (prefers-color-scheme: dark){
+  .feedback-card{
+    background:#1e1e1e;
+    color:#ddd;
+    border-left-color:#4e8bff;
+  }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829 !important;
