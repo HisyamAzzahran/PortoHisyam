@@ -26,8 +26,8 @@
 }
 
 .reflection .section-title h2,
-.reflection .section-title p{
-  color:#fff;
+  .reflection .section-title p{
+    color:#0d1b2a; 
 }
 
 @media (prefers-color-scheme: light){
